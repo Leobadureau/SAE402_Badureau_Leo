@@ -4,7 +4,7 @@
 
 - **Nom :** Badureau  
 - **Prénom :** Léo  
-- **URL Git Repo :** https://github.com/Leobadureau/SAE402  
+- **URL Git Repo :** https://github.com/Leobadureau/SAE402_Badureau_Leo
 - **URL Git Page :** https://leobadureau.github.io/SAE402_Badureau_Leo/
 
 ---
