@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>T-shirt Luxe Personnalisable</title>
+<link rel="stylesheet" href="Personalisation.css">
+</head>
+<body>
+
+<nav class="navbar-minimal">
+    <div class="nav-left"><div class="burger" onclick="toggleMenu()"><span></span><span></span><span></span></div></div>
+    <div class="logo"><a href="#"><img src="img/Logo 1.png" alt="MUSA"></a></div>
+    <div class="nav-right"><a href="#">RECHERCHER</a><a href="#">PANIER (0)</a></div>
+    <div id="mobileMenu" class="mobile-menu">
+        <span class="close-menu" onclick="toggleMenu()">×</span>
+        <a href="Index.html">Page Produit</a>
+        <a href="Personalisation.html">Personnalisation</a>
+    </div>
+</nav>
+
+<div id="mainProduct" class="product">
+    <img src="img/Fichier 2.png" class="background-image" alt="tshirt">
+    <div class="svg-layer">
+        <!-- Path holographique initial -->
+        <svg id="holoSVG" xmlns="http://www.w3.org/2000/svg" viewBox="250 -70 800 1170">
+            <defs>
+                <linearGradient id="holo-gradient4" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="white" stop-opacity="0.1"/>
+                    <stop offset="50%" stop-color="white" stop-opacity="0.5"/>
+                    <stop offset="100%" stop-color="white" stop-opacity="0.1"/>
+                </linearGradient>
+                <filter id="glow">
+                    <feGaussianBlur stdDeviation="8" result="blur"/>
+                    <feMerge>
+                        <feMergeNode in="blur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                </filter>
+            </defs>
+            <path d="M945.07,544.09c-21.33,30.83-41.23,36.12-64.55,33.29-11.36,55.61-57.06,437.4-57.06,437.4-.01,1.04-27.78,0-27.78,0,1.85-37.83,22.64-390.91,41.25-446.8-40.26-9.02-92.6-14.68-170.34,31.1-1.57.93-3.16,1.88-4.76,2.86-1.6-.98-3.19-1.93-4.76-2.86-80.76-47.56-127.09-41.14-167.92-31.57.05-.01.09-.02.13-.02-.09.02-.2.05-.3.07,20.18-2,42.05,405.89,44.06,447.15,0,0-26.74.38-26.75-.66,0,0-51.91-436.48-57.9-436.4-2.56.04-2.56-.3-.85-.89-25.24,4.01-46.29.08-68.95-32.67-114.96-166.17,5.57-371.81-20.88-516.6-2.43-13.32,58.6-41.65,57.31-14.87-14.01,291-109.74,481.24,64.12,500.95,22.91,2.59-3.12-2.7,141.45.35,17.16.37,26,21.59,41.24,30.97,15.25-9.39,24.09-30.6,41.24-30.97,144.57-3.05,118.54,2.24,141.45-.35,173.86-19.71,78.13-209.95,64.12-500.95-1.29-26.78,59.74,1.55,57.3,14.87-26.44,144.79,94.09,350.43-20.87,516.6Z" fill="url(#holo-gradient4)" filter="url(#glow)" opacity="0.5"/>
+        </svg>
+
+        <!-- SVG pour les couleurs -->
+        <svg id="colorSVG" viewBox="220 -80 330 1205" style="display:none">
+            <g id="c-shape1" transform="translate(25,0) scale(0.94)">
+                <path d="M24.77,28.96C49.29,19.56,73.81,10.17,98.33.78c-11.31,65.21.46,129.5-14.61,186-53.22,199.57-9.61,368.45,96.26,368.12l57.65,438.23-142.43-17.28C95.22,801.12-.28,462.52.5,458.61S33.43,41.18,24.77,28.96Z" fill="#ff0000"/>
+            </g>
+            <g id="c-shape2" transform="translate(235,505) scale(0.92)">
+                <path d="M49.1,463.87C48.93,300.33,25.37,154.67,.58,9.96,60.78-1.3,120.28-3.01,175.88,47.52,236.86,5.06,295.66-11.69,351.18,9.96c-23.46,129.32-38.23,284.86-48.52,453.91l-126.78,42.26-126.78-42.26Z" fill="#ff0000"/>
+            </g>
+            <g id="c-shape3" transform="translate(540,0) scale(0.94)">
+                <path d="M213.45,28.96c-24.52-9.39-49.04-18.78-73.57-28.17,11.31,65.21-.46,129.5,14.61,186,53.22,199.57,9.61,368.45-96.26,368.12L.58,993.13l142.43-17.28c-.02-174.73,95.48-513.32,94.7-517.24S204.79,41.18,213.45,28.96Z" fill="#ff0000"/>
+            </g>
+        </svg>
+
+        <!-- SVG pour les motifs -->
+        <svg id="motifSVG" viewBox="220 -80 330 1205" style="display:none">
+            <g id="m-shape1" transform="translate(40,0) scale(0.90)">
+                <path d="M24.77,28.96C49.29,19.56,73.81,10.17,98.33.78c-11.31,65.21.46,129.5-14.61,186-53.22,199.57-9.61,368.45,96.26,368.12l57.65,438.23-142.43-17.28C95.22,801.12-.28,462.52.5,458.61S33.43,41.18,24.77,28.96Z" fill="#ff0000"/>
+            </g>
+            <g id="m-shape2" transform="translate(240,485) scale(0.90)">
+                <path d="M49.1,463.87C48.93,300.33,25.37,154.67.58,9.96,60.78-1.3,120.28-3.01,175.88,47.52,236.86,5.06,295.66-11.69,351.18,9.96c-23.46,129.32-38.23,284.86-48.52,453.91l-126.78,42.26-126.78-42.26Z" fill="#ff0000"/>
+            </g>
+            <g id="m-shape3" transform="translate(535,0) scale(0.90)">
+                <path d="M213.45,28.96c-24.52-9.39-49.04-18.78-73.57-28.17,11.31,65.21-.46,129.5,14.61,186,53.22,199.57,9.61,368.45-96.26,368.12L.58,993.13l142.43-17.28c-.02-174.73,95.48-513.32,94.7-517.24S204.79,41.18,213.45,28.96Z" fill="#ff0000"/>
+            </g>
+        </svg>
+    </div>
+
+    <div class="custom-buttons">
+        <button onclick="toggleCustomizer()">Personnaliser les couleurs</button>
+        <button onclick="toggleMotifMode()">Personnaliser les motifs</button>
+    </div>
+
+    <div id="colorCustomizer">
+        <div id="colorSection">
+            <input class="jscolor" value="ff0000">
+            <div class="preset-colors">
+                <div class="color-box" style="background:red;" onclick="setGeneralColor('#ff0000')"></div>
+                <div class="color-box" style="background:blue;" onclick="setGeneralColor('#0000ff')"></div>
+                <div class="color-box" style="background:orange;" onclick="setGeneralColor('#ffa500')"></div>
+                <div class="color-box" style="background:green;" onclick="setGeneralColor('#008000')"></div>
+                <div class="color-box" style="background:yellow;" onclick="setGeneralColor('#ffff00')"></div>
+            </div>
+        </div>
+        <div id="motifSection" style="display:none;">
+            <div class="preset-motifs">
+                <button class="motif-box" onclick="setMotif(1)">Motif 1</button>
+                <button class="motif-box" onclick="setMotif(2)">Motif 2</button>
+            </div>
+            <div style="margin-top:10px;">
+                <input type="file" id="motifInput" accept="image/*" style="margin-bottom:10px;">
+                <label for="motifSizeSlider">Taille motif: </label>
+                <input type="range" id="motifSizeSlider" min="150" max="600" step="50" value="400" disabled>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://jscolor.com/releases/2.4.5/jscolor.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

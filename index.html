@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSA x Doris Marten - Produit</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="boutique.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar-minimal">
+        <div class="nav-left">
+            <div class="burger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/Logo 1.png" alt="MUSA">
+            </a>
+        </div>
+
+        <div class="nav-right">
+            <a href="#">PANIER (0)</a>
+        </div>
+
+        <!-- MENU Burger -->
+        <div id="mobileMenu" class="mobile-menu">
+            <span class="close-menu" onclick="toggleMenu()">×</span>
+            <a href="index.html">Page Produit</a>
+            <a href="Personalisation.html">Personnalisation</a>
+        </div>
+    </nav> 
+
+    <!-- PAGE PRODUIT -->
+    <main class="product-container">
+
+        <!-- VISUELS -->
+        <section class="product-visuals">
+            <div class="image-wrapper">
+                <video autoplay muted loop playsinline>
+                    <source src="Video/Defilé2.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="image-grid-two">
+                <div class="image-wrapper">
+                    <img src="img/look2.jpg" alt="Look produit">
+                </div>
+                <div class="image-wrapper">
+                    <img src="img/Look2 _detail.png" alt="Détail produit">
+                </div>
+            </div>
+        </section>
+
+        <!-- INFOS -->
+        <aside class="product-info">
+            <p class="category-label">MUSA x DORIS MARTEN</p>
+
+            <h1 class="product-title">Haut inspiration dirndl</h1>
+            <p class="product-subtitle">Light ’n’ Lines</p>
+            <p class="product-price">450 €</p>
+
+            <div class="product-selection">
+                <p class="selection-title">RÉFÉRENCE : 25B-MUSA16</p>
+
+                <div class="size-selector">
+                    <button class="size-btn">34</button>
+                    <button class="size-btn">36</button>
+                    <button class="size-btn active">38</button>
+                    <button class="size-btn">40</button>
+                    <button class="size-btn">42</button>
+                </div>
+            </div>
+
+            <button class="add-to-cart">AJOUTER AU PANIER</button>
+
+            <a href="Personalisation.html" class="contact-expert">
+                OUTILS DE PERSONNALISATION
+            </a>
+
+            <div class="product-description">
+                <details open>
+                    <summary>DESCRIPTION</summary>
+                    <p>Haut inspiré du dirndl revisité avec une approche contemporaine.</p>
+                </details>
+
+                <details>
+                    <summary>MATIÈRES & ENTRETIEN</summary>
+                    <p>Confection premium.</p>
+                </details>
+            </div>
+        </aside>
+
+    </main>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>

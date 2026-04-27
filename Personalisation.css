@@ -1,0 +1,251 @@
+/* =========================
+   RESET GLOBAL
+   ========================= */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #fff;
+}
+
+
+/* =========================
+   NAVBAR
+   ========================= */
+.navbar-minimal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #eee;
+}
+
+/* Conteneurs gauche et droite */
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Logo centré */
+.logo {
+    text-align: center;
+    flex: 1;
+}
+
+.logo img {
+    height: 45px;
+}
+
+/* Liens de navigation */
+.navbar-minimal a {
+    text-decoration: none;
+    color: #000;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: opacity 0.3s;
+}
+
+.navbar-minimal a:hover {
+    opacity: 0.7;
+}
+
+
+/* =========================
+   MENU BURGER
+   ========================= */
+.burger {
+    width: 25px;
+    height: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+/* Lignes du burger */
+.burger span {
+    height: 2px;
+    background: #000;
+    transition: 0.3s;
+}
+
+/* Animation burger actif */
+.burger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+
+/* =========================
+   MENU MOBILE
+   ========================= */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transition: left 0.4s;
+    z-index: 1500;
+}
+
+/* Menu ouvert */
+.mobile-menu.active {
+    left: 0;
+}
+
+/* Bouton fermer */
+.mobile-menu .close-menu {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #000;
+}
+
+/* =========================
+   SECTION PRODUIT
+   ========================= */
+.product {
+    position: relative;
+    width: 800px;
+    max-width: 90%;
+    margin: 140px auto 50px;
+}
+
+/* Image de fond */
+.background-image {
+    width: 100%;
+    display: block;
+}
+
+/* Calque SVG au-dessus */
+.svg-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    z-index: 1;
+}
+
+/* SVG global */
+svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* Zones interactives */
+path {
+    cursor: pointer;
+    transition: fill 0.2s ease, opacity 0.3s;
+}
+
+/* Zone sélectionnée */
+g.selected path {
+    stroke: #ffffff;
+    stroke-width: 3;
+}
+
+
+/* =========================
+   BOUTONS CUSTOMIZATION
+   ========================= */
+.custom-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 100;
+}
+
+/* Boutons */
+.custom-buttons button {
+    padding: 10px 20px;
+    border: 1px solid #000;
+    background: #fff;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.custom-buttons button:hover {
+    background: #000;
+    color: #fff;
+}
+
+
+/* =========================
+   COLOR CUSTOMIZER
+   ========================= */
+#colorCustomizer {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+    z-index: 100;
+}
+
+/* Palette de couleurs */
+.preset-colors {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Carré couleur */
+.color-box {
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+/* Choix de motif */
+/* MOTIFS */
+.motif-box {
+    padding: 10px;
+    border: 1px solid #000;
+    background: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.motif-box:hover {
+    background: #000;
+    color: #fff;
+}
